@@ -1,2 +1,2 @@
 # zc-data-engineering
-Repository for all my personal data engineering projects
+Repository for my personal data engineering projects

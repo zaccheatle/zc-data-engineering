@@ -1,4 +1,4 @@
-Python - Postgresql Flatfile Import
+Python Postgresql Flatfile Import Tool
 =
 
 ## Tool Description:

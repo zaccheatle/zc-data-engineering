@@ -1,3 +1,17 @@
-# Tool Description
+Python - Postgresql Flatfile Import
+=
 
-This is a dynamic Python ETL script that connects to a Postgresql database RDS instance in AWS and creates a database/schema from a folder of flatfiles (.csv, .xls, .xlsx format only). This script is also packaged separatley as an executable to enable team members to seamlessly integrate this solution into their daily workflow. 
+## Tool Description:
+Dynamic Python script that allows the user to create a PostgreSQL RDS instance in AWS from a folder of flatfiles (.csv, .xls, .xlsx format only). 
+
+## Features:
+* Packaged as an executable with a user friendly interface to enable technical and non-technical users alike
+* Saves the time of manually creating SQL tables from multiple files
+* Checks if database name already exists, if not, database is created
+* Processes larges files in chunks of 1000 rows
+* Logs progress to the console and any errors to a log file
+
+## Technologies:
+* AWS RDS
+* Python
+* SQL

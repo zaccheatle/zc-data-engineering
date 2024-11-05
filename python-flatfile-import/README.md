@@ -1,7 +1,7 @@
 Python PostgreSQL Flatfile Import Tool
 =
 
-## Tool Description:
+## Description:
 Dynamic Python script that allows the user to create a PostgreSQL RDS instance in AWS from a folder of flatfiles (.csv, .xls, .xlsx format only). 
 
 ## Features:

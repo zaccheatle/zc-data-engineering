@@ -215,8 +215,8 @@ def import_files(dbname):
         conn = psycopg2.connect(
             dbname=dbname,  # Connect to the specified database
             user='postgres',
-            password='L^3WN4CNJeqPwTZu',
-            host='ds-database-postgres-161.ch7gieuydkdj.us-west-2.rds.amazonaws.com',
+            password='xxxxxxxxx',
+            host='xxxxxxxxxxxxxxx',
             port=5432
         )
         cursor = conn.cursor()

@@ -17,14 +17,21 @@ import unittest
 
 # ------------------------------------ Logging
 
+# Configure logging to overwrite file on each run
 logging.basicConfig(
+    filename="pipeline.log",
+    filemode='w',  # Overwrite the log file before every run
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=logging.DEBUG,  # Ensure all logs appear
-    handlers=[
-        logging.FileHandler("pipeline.log"),  # Log to file
-        logging.StreamHandler()  # Log to console
-    ]
+    level=logging.DEBUG,  # Capture all log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    force=True  # Ensures logging is fully reset
 )
+
+# Also print logs to console
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+console_handler.setFormatter(formatter)
+logging.getLogger().addHandler(console_handler)
 
 # ------------------------------------ self.data Pipeline Steps
 

@@ -1,0 +1,5 @@
+# ignore practice files
+practice-pipeline/
+
+# ignore .env files
+**/.env*

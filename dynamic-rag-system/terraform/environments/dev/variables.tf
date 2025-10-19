@@ -1,3 +1,18 @@
+variable "account_id" {
+  description = "Account ID of caller"
+  type = string
+}
+
+variable "caller_arn" {
+  description = "ARN of caller"
+  type = string
+}
+
+variable "caller_user" {
+  description = "User ID of caller"
+  type = string
+}
+
 variable "aws_region" {
   description = "AWS Region"
   type        = string
@@ -21,3 +36,4 @@ variable "vpc_cidr_block" {
   type        = string
   default     = "10.0.0.0/16"
 }
+
